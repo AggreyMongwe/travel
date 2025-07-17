@@ -1,84 +1,226 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f0f8ff;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+nav {
     background-color: #0077b6;
-    padding: 10px;
+    color: #fff;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: white;
+    gap: 1rem;
 }
 
-.navbar a {
-    color: white;
+nav a {
+    color: #fff;
     text-decoration: none;
-    margin: 0 10px;
+    font-weight: 500;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: auto;
+nav a:hover {
+    color: #90e0ef;
 }
 
-input[type="text"] {
-    padding: 5px;
+nav input[type="text"] {
+    padding: 0.4rem;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: none;
+    outline: none;
+    width: 200px;
 }
 
-button {
-    padding: 5px 10px;
+nav button {
+    background-color: #0096c7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #00b4d8;
+}
+
+.hero {
+    background: linear-gradient(#0096c7, #00b4d8);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero button {
     background-color: #00b4d8;
     color: white;
     border: none;
-    border-radius: 5px;
-}
-
-.home {
-    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
-    height: 300px;
-    color: white;
-    text-align: center;
-    padding-top: 80px;
-    position: relative;
-}
-
-.intro {
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.socials a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
-}
-
-#about, #contact {
-    padding: 20px;
-    background: #e0f7fa;
-}
-
-form input, form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 #results {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.recommendation {
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    padding: 15px;
-    background: white;
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #0077b6;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* About & Contact Page Styles */
+.info-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.info-section h1 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-section ul li {
+    margin-bottom: 0.5rem;
+}
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero button {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #0077b6;
+}
+
+/* Destinations Section at the Bottom */
+.destinations {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.destinations h2 {
+    margin-bottom: 1rem;
+    color: #0077b6;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #0077b6;
+}
+
+.card p {
+    padding: 0 1rem 1rem;
+    color: #555;
+    font-size: 0.95rem;
 }

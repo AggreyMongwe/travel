@@ -2,60 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TravelBloom</title>
+    <title>TravelBloom - Explore Dream Destination</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">🌍 TravelBloom</div>
+    <nav>
         <a href="travel_recommendation.html">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-        <input type="text" id="searchInput" placeholder="Search...">
-        <button onclick="searchRecommendations()">Search</button>
-        <button onclick="clearResults()">Reset</button>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <input type="text" id="searchInput" placeholder="Search: beach, temple">
+        <button onclick="search()">Search</button>
+        <button onclick="clearResults()">Clear</button>
     </nav>
 
-    <!-- Home Page -->
-    <section class="home" id="home">
-        <div class="intro">
-            <h1>Welcome to TravelBloom!</h1>
-            <p>Discover stunning beaches, peaceful temples, and exciting countries to visit.</p>
-        </div>
-        <div class="socials">
-            <a href="#">🌐</a>
-            <a href="#">📘</a>
-            <a href="#">📸</a>
-        </div>
+    <header class="hero">
+        <h1>Explore Dream Destinations</h1>
+        <p>Discover new places and cultures with TravelBloom.</p>
+        <button>Book Now</button>
+    </header>
+
+    <section class="destinations">
+        <h2>Popular Countries</h2>
+        <div id="countryResults"></div>
     </section>
 
-    <!-- About Us -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a group of travel enthusiasts aiming to help you find the perfect getaway.</p>
-        <div class="team">
-            <div><strong>Alice</strong> - Project Manager</div>
-            <div><strong>Bob</strong> - Developer</div>
-            <div><strong>Charlie</strong> - Designer</div>
-        </div>
+    <section class="destinations">
+        <h2>Search Results</h2>
+        <div id="results"></div>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea rows="4" placeholder="Your Message..."></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Recommendations -->
-    <section id="results"></section>
-
-    <script src="script.js"></script>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
