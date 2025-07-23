@@ -6,12 +6,12 @@
             "cities": [
                 {
                     "name": "Sydney, Australia",
-                    "imageUrl": "https://source.unsplash.com/400x300/?sydney",
+                    "imageUrl": "https://images.unsplash.com/photo-1554869284-9e692207599b?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge."
                 },
                 {
                     "name": "Melbourne, Australia",
-                    "imageUrl": "https://source.unsplash.com/400x300/?melbourne",
+                    "imageUrl": "https://plus.unsplash.com/premium_photo-1733338816344-1a21444a646f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
                 }
             ]
@@ -22,12 +22,12 @@
             "cities": [
                 {
                     "name": "Tokyo, Japan",
-                    "imageUrl": "https://source.unsplash.com/400x300/?tokyo",
+                    "imageUrl": "https://images.unsplash.com/photo-1711090915709-595f2417c60b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8VG9reW8lMkMlMjBKYXBhbnxlbnwwfHwwfHx8MA%3D%3D",
                     "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture."
                 },
                 {
                     "name": "Kyoto, Japan",
-                    "imageUrl": "https://source.unsplash.com/400x300/?kyoto",
+                    "imageUrl": "https://images.unsplash.com/photo-1558870832-c8db4b5b47d1?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "description": "Known for its historic temples, gardens, and traditional tea houses."
                 }
             ]
@@ -38,12 +38,12 @@
             "cities": [
                 {
                     "name": "Rio de Janeiro, Brazil",
-                    "imageUrl": "https://source.unsplash.com/400x300/?rio-de-janeiro",
+                    "imageUrl": "]https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks."
                 },
                 {
                     "name": "São Paulo, Brazil",
-                    "imageUrl": "https://source.unsplash.com/400x300/?sao-paulo",
+                    "imageUrl": "https://images.unsplash.com/photo-1649548549297-2030a0878881?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "description": "The financial hub with diverse culture, arts, and a vibrant nightlife."
                 }
             ]
@@ -53,13 +53,13 @@
         {
             "id": 1,
             "name": "Angkor Wat, Cambodia",
-            "imageUrl": "https://source.unsplash.com/400x300/?angkor-wat",
+            "imageUrl": "https://plus.unsplash.com/premium_photo-1661963188432-5de8a11f21a7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "description": "A UNESCO World Heritage site and the largest religious monument in the world."
         },
         {
             "id": 2,
             "name": "Taj Mahal, India",
-            "imageUrl": "https://source.unsplash.com/400x300/?taj-mahal",
+            "imageUrl": "https://images.unsplash.com/photo-1598324789736-4861f89564a0?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
         }
     ],
@@ -67,13 +67,13 @@
         {
             "id": 1,
             "name": "Bora Bora, French Polynesia",
-            "imageUrl": "https://source.unsplash.com/400x300/?bora-bora",
+            "imageUrl": "https://images.unsplash.com/photo-1589806036187-fcbc6a7a23b6?q=80&w=996&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
         },
         {
             "id": 2,
             "name": "Copacabana Beach, Brazil",
-            "imageUrl": "https://source.unsplash.com/400x300/?copacabana",
+            "imageUrl": "https://plus.unsplash.com/premium_photo-1694475416337-6e68c11d7797?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
         }
     ]

@@ -1,63 +1,47 @@
-window.onload = () => {
-    fetch('travel_recommendation_api.json')
-        .then(response => response.json())
-        .then(data => {
-            const countries = data.countries;
-            countries.forEach(country => {
-                country.cities.forEach(city => {
-                    displayCountryCard(city.name, city.imageUrl, city.description);
-                });
-            });
-        })
-        .catch(error => console.error('Failed to load countries:', error));
-};
-
 function search() {
     const input = document.getElementById('searchInput').value.toLowerCase();
+    console.log(input);
     const results = document.getElementById('results');
     results.innerHTML = '';
 
-    fetch('travel_recommendation_api.json')
+    fetch('./travel_recommendation_api.json')
         .then(response => response.json())
         .then(data => {
-            if (input.includes('temple')) {
+            console.log(data)
+            if (input.includes('temple') || input.includes('temples')) {
                 data.temples.forEach(temple => {
                     displaySearchCard(temple.name, temple.imageUrl, temple.description);
                 });
-            } else if (input.includes('beach')) {
+            } else if (input.includes('beach') || input.includes('beaches')) {
                 data.beaches.forEach(beach => {
                     displaySearchCard(beach.name, beach.imageUrl, beach.description);
                 });
-            } else {
-                results.innerHTML = '<p>No matching category found. Try beach or temple.</p>';
+            } else if (input.includes('country') || input.includes('countries')) {
+                data.beaches.forEach(country => {
+                    displaySearchCard(country.name, country.imageUrl, country.description)})
+
+            }else {
+                results.innerHTML = 'No matching category found. Try beach or temple.';
             }
         })
         .catch(error => {
             console.error('Failed to load data:', error);
-            results.innerHTML = '<p>Failed to load data.</p>';
+            results.innerHTML = 'Failed to load data.';
         });
-}
-
-function displayCountryCard(name, img, desc) {
-    const results = document.getElementById('countryResults');
-    results.innerHTML += `
-        <div class="card">
-            <img src="${img}" alt="${name}">
-            <h3>${name}</h3>
-            <p>${desc}</p>
-        </div>
-    `;
 }
 
 function displaySearchCard(name, img, desc) {
     const results = document.getElementById('results');
-    results.innerHTML += `
-        <div class="card">
-            <img src="${img}" alt="${name}">
-            <h3>${name}</h3>
-            <p>${desc}</p>
-        </div>
-    `;
+    const dName = document.createElement('h3')
+    dName.innerHTML = name
+    const image = document.createElement('img')
+    image.src = img
+    const description = document.createElement('p')
+    description.innerHTML = desc
+
+    results.appendChild(dName)
+    results.appendChild(image)
+    results.appendChild(description)
 }
 
 function clearResults() {
